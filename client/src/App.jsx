@@ -16,6 +16,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
 
 
+
 export default function App() {
   return (
     <BrowserRouter >
@@ -27,6 +28,10 @@ export default function App() {
       <Route path='/sign-in' element={<Signin/>} />
       <Route path='/sign-up' element={<SignUp/>} />
       <Route path='/search' element={<Search/>} />
+     
+
+
+  
       <Route element={<PrivateRoute/>} >
       <Route path='/dashboard' element={<Dashboard/>} />
          </Route>
